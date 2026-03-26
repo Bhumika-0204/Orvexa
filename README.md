@@ -65,5 +65,3 @@ Make sure to configure your environment variables in `.env` files in both the fr
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit pull requests to improve the project or fix bugs. Make sure to follow the contribution guidelines and code of conduct when contributing.
 
-## 📄 License
-This project is licensed under the MIT License.
