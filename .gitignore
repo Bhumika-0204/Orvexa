@@ -49,12 +49,16 @@ coverage
 *.lcov
 .nyc_output
 
+
+
 # Miscellaneous Caches
 .npm
 .eslintcache
 .yarn-integrity
 .cache
 .parcel-cache
+
+
 
 # OS generated files
 Thumbs.db
