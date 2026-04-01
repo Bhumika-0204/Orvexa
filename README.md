@@ -62,6 +62,5 @@ Orvexa Backend is the server-side component of the Orvexa application, designed 
 ## Environment Variables
 Make sure to configure your environment variables in `.env` files in both the frontend and backend directories. You'll need settings like the backend API URL for the frontend, and MongoDB connection string, Cloudinary credentials, and JWT secret for the backend.
 
-## 🤝 Contributing
-Contributions are welcome! Please feel free to submit pull requests to improve the project or fix bugs. Make sure to follow the contribution guidelines and code of conduct when contributing.
+
 
