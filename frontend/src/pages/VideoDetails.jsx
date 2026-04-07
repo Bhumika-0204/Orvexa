@@ -403,7 +403,7 @@ function VideoDetails() {
                                       handlePlaylistVideo(item._id, e.target.checked)
                                     }
                                   />
-                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-[4px] border border-transparent bg-white text-white group-hover/label:border-[#ae7aff] peer-checked:border-[#ae7aff] peer-checked:text-[#ae7aff]">
+                                  <span className="inline-flex h-4 w-4 items-center justify-center rounded-[4px] border border-transparent bg-white text-white group-hover/label:border-[#e81cff] peer-checked:border-[#e81cff] peer-checked:text-[#e81cff]">
                                     <svg
                                       xmlns="http://www.w3.org/2000/svg"
                                       fill="none"
@@ -439,11 +439,11 @@ function VideoDetails() {
                             id="playlist-name"
                             placeholder="Enter playlist name"
                             required
-                            className="w-full rounded-lg border border-transparent bg-white px-3 py-2 text-black outline-none focus:border-[#ae7aff]"
+                            className="w-full rounded-lg border border-transparent bg-white px-3 py-2 text-black outline-none focus:border-[#e81cff]"
                           />
                           <button
                             type="submit"
-                            className="mx-auto mt-4 rounded-lg bg-[#ae7aff] px-4 py-2 text-black"
+                            className="mx-auto mt-4 rounded-lg bg-[#e81cff] px-4 py-2 text-black"
                           >
                             Create new playlist
                           </button>

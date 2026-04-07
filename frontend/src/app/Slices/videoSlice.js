@@ -13,7 +13,11 @@ const initialState = {
 export const publishVideo = createAsyncThunk("video/publishVideo", async ({ data }, { signal }) => {
   const formData = new FormData();
 
-  for (const key in data) formData.append(key, data[key]);
+  for (const key in data) {
+    if (key !== "thumbnail" && key !== "videoFile") {
+      formData.append(key, data[key]);
+    }
+  }
   formData.append("thumbnail", data.thumbnail[0]);
   formData.append("videoFile", data.videoFile[0]);
 
@@ -63,8 +67,12 @@ export const getVideo = createAsyncThunk("video/getVideo", async (videoId) => {
 export const updateVideo = createAsyncThunk("video/updateVideo", async ({ videoId, data }) => {
   const formData = new FormData();
 
-  for (const key in data) formData.append(key, data[key]);
-  if (data.thumbnail) formData.append("thumbnail", data.thumbnail[0]);
+  for (const key in data) {
+    if (key !== "thumbnail" && key !== "videoFile") {
+      formData.append(key, data[key]);
+    }
+  }
+  if (data.thumbnail && data.thumbnail.length > 0) formData.append("thumbnail", data.thumbnail[0]);
 
   try {
     const response = await axiosInstance.patch(`/videos/update-video/${videoId}`, formData, {

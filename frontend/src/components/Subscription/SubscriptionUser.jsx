@@ -43,7 +43,7 @@ function SubscriptionUser({ profile }) {
         <div className="block">
           <button
             onClick={handleToggleSubscription}
-            className={`px-3 py-2 text-black ${isSubscribed ? "bg-[#ae7aff]" : "bg-white"} `}
+            className={`px-3 py-2 text-black ${isSubscribed ? "bg-[#e81cff]" : "bg-white"} `}
           >
             <span>{isSubscribed ? "Subscribed" : "Subscribe"}</span>
           </button>

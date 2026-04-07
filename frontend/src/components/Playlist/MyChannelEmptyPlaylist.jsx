@@ -5,7 +5,7 @@ function MyChannelEmptyPlaylist({ onClickBtn }) {
     <div className="flex justify-center p-4">
       <div className="w-full max-w-sm text-center">
         <p className="mb-3 w-full">
-          <span className="inline-flex rounded-full bg-[#E4D3FF] p-2 text-[#AE7AFF]">
+          <span className="inline-flex rounded-full bg-[#E4D3FF] p-2 text-[#e81cff]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,7 +29,7 @@ function MyChannelEmptyPlaylist({ onClickBtn }) {
         </p>
         <button
           onClick={() => onClickBtn()}
-          className="mt-4 inline-flex items-center gap-x-2 bg-[#ae7aff] border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+          className="mt-4 inline-flex items-center gap-x-2 bg-[#e81cff] border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

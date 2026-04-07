@@ -46,7 +46,7 @@ function AdminVideoAtom({ video }) {
               defaultChecked={video.isPublished}
               className="peer sr-only"
             />
-            <span className="inline-block h-6 w-full rounded-2xl bg-gray-200 duration-200 after:absolute after:bottom-1 after:left-1 after:top-1 after:h-4 after:w-4 after:rounded-full after:bg-black after:duration-200 peer-checked:bg-[#ae7aff] peer-checked:after:left-7"></span>
+            <span className="inline-block h-6 w-full rounded-2xl bg-gray-200 duration-200 after:absolute after:bottom-1 after:left-1 after:top-1 after:h-4 after:w-4 after:rounded-full after:bg-black after:duration-200 peer-checked:bg-[#e81cff] peer-checked:after:left-7"></span>
           </label>
         </div>
       </td>
@@ -140,7 +140,7 @@ function AdminVideoAtom({ video }) {
           {/* Edit Button */}
           <button
             onClick={() => editDialog.current?.open()}
-            className="h-5 w-5 hover:text-[#ae7aff]"
+            className="h-5 w-5 hover:text-[#e81cff]"
           >
             {icons.edit}
           </button>

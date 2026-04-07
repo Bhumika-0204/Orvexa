@@ -49,7 +49,7 @@ const publishAVideo = asyncHandler(async (req, res) => {
         owner:user._id,
         title:title,
         description:description || "",
-        duration:videoFile.duration
+        duration:videoFile.duration || 0
     })
 
     return (

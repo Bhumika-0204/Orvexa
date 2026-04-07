@@ -4,12 +4,14 @@ import { formatSubscription } from "../../helpers/formatFigures";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import LoginPopup from "../Auth/LoginPopup";
+import { VideoForm } from "../index";
 
 function ChannelProfileAtom({ profile, owner = false }) {
   const dispatch = useDispatch();
   const [isSubscribed, setIsSubscribed] = useState(profile.isSubscribed);
   const navigate = useNavigate();
   const loginPopupDialog = useRef();
+  const uploadRef = useRef();
 
   const { status: authStatus } = useSelector(({ auth }) => auth);
 
@@ -36,33 +38,41 @@ function ChannelProfileAtom({ profile, owner = false }) {
       {/* Subscribe/Edit Button */}
       <div className="inline-block">
         {owner ? (
-          <button
-            onClick={() => navigate("/settings")}
-            className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#ae7aff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
-          >
-            <span className="inline-block w-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
-                ></path>
-              </svg>
-            </span>
-            Edit
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={() => navigate("/settings")}
+              className="group/btn flex items-center gap-x-2 bg-[#e81cff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] w-auto"
+            >
+              <span className="inline-block w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"></path>
+                </svg>
+              </span>
+              Edit
+            </button>
+            <VideoForm ref={uploadRef} />
+            <button
+              onClick={() => uploadRef.current?.open()}
+              className="group/btn flex items-center gap-x-2 bg-[#e81cff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] w-auto"
+            >
+              <span className="inline-block w-5">
+                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path></svg>
+              </span>
+              Upload
+            </button>
+          </div>
         ) : (
           <button
             onClick={handleClick}
             className={`${
-              isSubscribed ? "bg-[#ae7aff]" : "bg-white"
+              isSubscribed ? "bg-[#e81cff]" : "bg-white"
             } group/btn mr-1 flex w-full items-center gap-x-2 px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto`}
           >
             <span className="inline-block w-5">

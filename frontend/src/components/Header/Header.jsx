@@ -13,6 +13,7 @@ function Header() {
   const searchInputRef = useRef();
   const smallSearchInputRef = useRef();
 
+
   function handleSearchQuery(input) {
     let searchQuery = input.trim();
     if (!searchQuery) {
@@ -92,7 +93,7 @@ function Header() {
               alt="Medium Logo"
               className="h-15 w-20 py-3"
             />
-            <div><h3 className="text-3xl font-semibold font-Playpen cursive font text-purple-500 ">Orvexa</h3></div>
+            <div><h3 className="text-3xl font-semibold font-Playpen cursive font text-fuchsia-500 ">ORVΞXA</h3></div>
           </div>
         </div>
         </Link>
@@ -121,7 +122,7 @@ function Header() {
           <div className="relative w-full max-w-lg overflow-hidden">
             <input
               ref={searchInputRef}
-              className="w-full border focus:border-[#ae7aff] bg-transparent py-1 pl-8 pr-3 placeholder-white outline-none sm:py-2"
+              className="w-full border focus:border-[#e81cff] bg-transparent py-1 pl-8 pr-3 placeholder-white outline-none sm:py-2"
               placeholder="Search"
             />
             <span className="absolute left-2.5 top-1/2 inline-block -translate-y-1/2">
@@ -144,7 +145,7 @@ function Header() {
           </div>
           <button
             type="submit"
-            className="border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent hover:text-[#ae7aff] hover:bg-gray-500/10"
+            className="border-r border-b border-t rounded-r-xl px-3 py-1 bg-transparent hover:text-[#e81cff] hover:bg-gray-500/10"
           >
             <div className="size-6 sm:size-8 flex items-center">
               <svg
@@ -176,12 +177,12 @@ function Header() {
           <div className="relative w-full max-w-lg overflow-hidden">
             <input
               ref={smallSearchInputRef}
-              className="w-full border rounded-r-2xl focus:border-[#ae7aff] bg-transparent py-1 pl-2 pr-3 placeholder-white outline-none"
+              className="w-full border rounded-r-2xl focus:border-[#e81cff] bg-transparent py-1 pl-2 pr-3 placeholder-white outline-none"
               placeholder="Search"
             />
             <button
               type="submit"
-              className="absolute right-2 hover:text-[#ae7aff] top-1/2 inline-block -translate-y-1/2"
+              className="absolute right-2 hover:text-[#e81cff] top-1/2 inline-block -translate-y-1/2"
             >
               {icons.search}
             </button>
@@ -189,11 +190,12 @@ function Header() {
         </form>
 
 
+
         {/* Hamburger Menu Style*/}
         <button className="group peer ml-4 flex w-6 shrink-0 flex-wrap gap-y-1.5 sm:hidden">
-          <span className="block h-[2px] w-full bg-white group-hover:bg-[#ae7aff]"></span>
+          <span className="block h-[2px] w-full bg-white group-hover:bg-[#e81cff]"></span>
           <span className="block h-[2px] w-2/3 bg-white group-hover:bg-[rgb(174,122,255)]"></span>
-          <span className="block h-[2px] w-full bg-white group-hover:bg-[#ae7aff]"></span>
+          <span className="block h-[2px] w-full bg-white group-hover:bg-[#e81cff]"></span>
         </button>
 
         {/* Responsive Mobile View list */}
@@ -209,11 +211,11 @@ function Header() {
                   key={item.title}
                   end
                   className={({ isActive }) =>
-                    `${isActive && "text-[#ae7aff] sm:bg-[#ae7aff] sm:text-black"
-                    } flex flex-col items-center justify-center border-white py-1 focus:text-[#ae7aff] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#ae7aff] sm:hover:text-white sm:focus:border-[#ae7aff] sm:focus:bg-[#ae7aff] sm:focus:text-black  lg:px-4`
+                    `${isActive && "text-[#e81cff] sm:bg-[#e81cff] sm:text-black"
+                    } flex flex-col items-center justify-center border-white py-1 focus:text-[#e81cff] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#e81cff] sm:hover:text-white sm:focus:border-[#e81cff] sm:focus:bg-[#e81cff] sm:focus:text-black  lg:px-4`
                   }
                 >
-                  <button className="flex w-full items-center justify-start gap-x-4 border border-white px-4 py-1.5 text-left hover:bg-[#ae7aff] hover:text-black focus:border-[#ae7aff] focus:bg-[#ae7aff] focus:text-black">
+                  <button className="flex w-full items-center justify-start gap-x-4 border border-white px-4 py-1.5 text-left hover:bg-[#e81cff] hover:text-black focus:border-[#e81cff] focus:bg-[#e81cff] focus:text-black">
                     <span className="inline-block w-full max-w-[20px] group-hover:mr-4 lg:mr-4">
                       {item.icon}
                     </span>
@@ -252,7 +254,7 @@ function Header() {
                 </button>
               </Link>
               <Link to={"/signup"}>
-                <button className="mr-1 w-full bg-[#ae7aff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto">
+                <button className="mr-1 w-full bg-[#e81cff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto">
                   Sign up
                 </button>
               </Link>
@@ -260,6 +262,13 @@ function Header() {
           )}
         </div>
 
+        <button
+          onClick={() => document.body.classList.toggle("light-mode")}
+          className="ml-auto mr-4 text-2xl hover:opacity-75 sm:ml-4"
+          title="Toggle Light/Dark Theme"
+        >
+          🌓
+        </button>
         {authStatus && <LogoutBtn />}
       </nav>
     </header>

@@ -59,7 +59,7 @@ function ChannelState({ channelStates = null }) {
           {<VideoForm ref={uploadRef} />}
           <button
             onClick={() => uploadRef.current?.open()}
-            className="inline-flex items-center gap-x-2 bg-[#ae7aff] hover:bg-[#ae7aff]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+            className="inline-flex items-center gap-x-2 bg-[#e81cff] hover:bg-[#e81cff]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

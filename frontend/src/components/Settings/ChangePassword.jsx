@@ -95,7 +95,7 @@ function ChangePassword() {
             >
               Cancel
             </button>
-            <button type="submit" className="inline-block bg-[#ae7aff] px-3 py-1.5 text-black">
+            <button type="submit" className="inline-block bg-[#e81cff] px-3 py-1.5 text-black">
               Update Password
             </button>
           </div>

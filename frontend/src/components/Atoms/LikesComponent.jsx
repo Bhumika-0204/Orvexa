@@ -85,12 +85,12 @@ function LikesComponent({
       >
         <span
           className={`inline-block ${videoId ? "w-5" : "w-4"} ${
-            like?.isLiked ? "btn:text-[#ae7aff]" : "btn:text-white"
+            like?.isLiked ? "btn:text-[#e81cff]" : "btn:text-white"
           }`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill={like?.isLiked ? "#ae7aff" : "none"}
+            fill={like?.isLiked ? "#e81cff" : "none"}
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
@@ -114,12 +114,12 @@ function LikesComponent({
       >
         <span
           className={`inline-block ${videoId ? "w-5" : "w-4"} ${
-            dislike?.isDisLiked ? "btn:text-[#ae7aff]" : "btn:text-white"
+            dislike?.isDisLiked ? "btn:text-[#e81cff]" : "btn:text-white"
           }`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill={dislike?.isDisLiked ? "#ae7aff" : "none"}
+            fill={dislike?.isDisLiked ? "#e81cff" : "none"}
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"

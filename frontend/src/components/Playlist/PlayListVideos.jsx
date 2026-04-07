@@ -196,7 +196,7 @@ function PlaylistVideos() {
               <div className="flex items-center justify-center">
                 <button
                   onClick={() => deletePlaylistDialog.current?.open()}
-                  className=" w-28 rounded inline-flex items-center justify-center gap-x-2 bg-[#ae7aff] hover:bg-gray-900 hover:text-red-500 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+                  className=" w-28 rounded inline-flex items-center justify-center gap-x-2 bg-[#e81cff] hover:bg-gray-900 hover:text-red-500 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
                 >
                   <span className="h-5">{icons.delete}</span>
                   Delete
@@ -205,7 +205,7 @@ function PlaylistVideos() {
               <div className="flex items-center justify-center">
                 <button
                   onClick={() => dialog.current?.open()}
-                  className=" w-28 rounded inline-flex items-center justify-center gap-x-2 bg-[#ae7aff] hover:bg-gray-900 hover:text-[#ae7aff] border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+                  className=" w-28 rounded inline-flex items-center justify-center gap-x-2 bg-[#e81cff] hover:bg-gray-900 hover:text-[#e81cff] border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
                 >
                   <span className="h-5">{icons.edit}</span>
                   Edit

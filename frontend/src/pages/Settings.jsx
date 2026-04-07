@@ -34,7 +34,7 @@ function Settings() {
           />
           <label
             htmlFor="cover-image"
-            className="inline-block h-10 w-10 cursor-pointer rounded-lg bg-white/70 p-1 text-[#ae7aff] hover:bg-white"
+            className="inline-block h-10 w-10 cursor-pointer rounded-lg bg-white/70 p-1 text-[#e81cff] hover:bg-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ function Settings() {
               />
               <label
                 htmlFor="profile-image"
-                className="inline-block h-8 w-8 cursor-pointer rounded-lg bg-white/70 p-1 text-[#ae7aff] hover:bg-white"
+                className="inline-block h-8 w-8 cursor-pointer rounded-lg bg-white/70 p-1 text-[#e81cff] hover:bg-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ function Settings() {
           <div className="inline-block">
             <button
               onClick={() => navigate(`/channel/${userData?.username}`)}
-              className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#ae7aff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
+              className="group/btn mr-1 flex w-full items-center gap-x-2 bg-[#e81cff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e] sm:w-auto"
             >
               View channel
             </button>
@@ -117,7 +117,7 @@ function Settings() {
               onClick={() => setCurrentTab(0)}
               className={`w-full border-b-2 ${
                 currentTab === 0
-                  ? "border-[#ae7aff] text-[#ae7aff] bg-white px-3"
+                  ? "border-[#e81cff] text-[#e81cff] bg-white px-3"
                   : "border-transparent text-gray-400"
               } py-1.5 `}
             >
@@ -130,7 +130,7 @@ function Settings() {
               onClick={() => setCurrentTab(1)}
               className={`w-full border-b-2 px-3 py-1.5 ${
                 currentTab === 1
-                  ? "border-[#ae7aff] text-[#ae7aff] bg-white"
+                  ? "border-[#e81cff] text-[#e81cff] bg-white"
                   : "border-transparent text-gray-400"
               } `}
             >

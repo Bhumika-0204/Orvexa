@@ -79,7 +79,7 @@ function TweetAtom({ tweet, owner, authStatus }) {
                 name="tweet"
                 onChange={(e) => setContent(e.target.value)}
                 disabled={!owner || !isEditing}
-                className=" w-full bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#ae7aff] focus:border-[#ae7aff]"
+                className=" w-full bg-transparent outline-none border-b-[1px] border-transparent enabled:border-[#e81cff] focus:border-[#e81cff]"
                 value={content}
               />
             )}
@@ -117,7 +117,7 @@ function TweetAtom({ tweet, owner, authStatus }) {
                   isEditing ? handleUpdate() : handleEditing();
                 }}
                 disabled={isEditing ? tweet.content === content || !content.trim() : false}
-                className="rounded-3xl pt-0 bg-[#ae7aff] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
+                className="rounded-3xl pt-0 bg-[#e81cff] disabled:bg-gray-800 disabled:text-white disabled:cursor-not-allowed hover:bg-[#b48ef1] text-sm text-black font-semibold border border-b-white px-2 pb-1"
               >
                 {isEditing ? "Update" : "Edit"}
               </Button>

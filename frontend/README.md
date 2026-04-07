@@ -1,7 +1,7 @@
-# Orvexa Frontend
+# ORVΞXA Frontend
 
 
-**Orvexa** is a unique web application that blends the best features of YouTube and Twitter. Users can search and view videos like YouTube, while also tweeting, interacting, and engaging with others as they would on Twitter. This project serves as the frontend for the Orvexa platform, providing a sleek, interactive user interface built using **React**.
+**ORVΞXA** is a unique web application that blends the best features of YouTube and Twitter. Users can search and view videos like YouTube, while also tweeting, interacting, and engaging with others as they would on Twitter. This project serves as the frontend for the ORVΞXA platform, providing a sleek, interactive user interface built using **React**.
 
 ## 🚀 Features
 

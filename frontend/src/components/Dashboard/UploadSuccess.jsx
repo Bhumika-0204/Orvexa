@@ -1,7 +1,7 @@
 import React, { useRef, useImperativeHandle } from "react";
 import { createPortal } from "react-dom";
 
-function UploadSuccess({ video, updating = false }, ref) {
+function UploadSuccess({ video, updating = false, onUploadAnother }, ref) {
   const dialog = useRef();
 
   useImperativeHandle(ref, () => {
@@ -44,7 +44,7 @@ function UploadSuccess({ video, updating = false }, ref) {
               </div>
               <div className="mb-6 flex gap-x-2 border p-3">
                 <div className="w-8 shrink-0">
-                  <span className="inline-block w-full rounded-full bg-[#E4D3FF] p-1 text-[#AE7AFF]">
+                  <span className="inline-block w-full rounded-full bg-[#E4D3FF] p-1 text-[#e81cff]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -75,7 +75,7 @@ function UploadSuccess({ video, updating = false }, ref) {
                     </p>
                   )}
                   <div className="mt-2 flex items-center">
-                    <span className="mr-2 inline-block w-6 text-[#ae7aff]">
+                    <span className="mr-2 inline-block w-6 text-[#e81cff]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
@@ -98,10 +98,10 @@ function UploadSuccess({ video, updating = false }, ref) {
                   Close
                 </button>
                 <button
-                  onClick={() => dialog.current?.close()}
-                  className="bg-[#ae7aff] px-4 py-3 text-black disabled:bg-[#E4D3FF]"
+                  onClick={() => { dialog.current?.close(); if(onUploadAnother) onUploadAnother(); }}
+                  className="bg-[#e81cff] px-4 py-3 text-black disabled:bg-[#E4D3FF]"
                 >
-                  Finish
+                  {updating ? "Finish" : "Upload Another"}
                 </button>
               </div>
             </div>

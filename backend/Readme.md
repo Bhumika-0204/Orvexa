@@ -1,6 +1,6 @@
-# Orvexa Backend
+# ORVΞXA Backend
 
-**Orvexa Backend** is the server-side component of the Orvexa application, designed to handle data processing, storage, and management for the Orvexa platform. It provides a robust API that supports functionalities such as user authentication, video uploading, and tweet management.
+**ORVΞXA Backend** is the server-side component of the ORVΞXA application, designed to handle data processing, storage, and management for the ORVΞXA platform. It provides a robust API that supports functionalities such as user authentication, video uploading, and tweet management.
 
 ## 🛠️ Tech Stack
 

@@ -85,8 +85,8 @@ function Aside() {
               end
               className={({ isActive }) =>
                 `${
-                  isActive && "text-[#ae7aff] sm:bg-[#ae7aff] sm:text-black"
-                } flex flex-col items-center justify-center border-white py-1 focus:text-[#ae7aff] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#ae7aff] sm:hover:text-white sm:focus:border-[#ae7aff] sm:focus:bg-[#ae7aff] sm:focus:text-black sm:group-hover:justify-start sm:group-hover:px-4 lg:justify-start lg:px-4`
+                  isActive && "text-[#e81cff] sm:bg-[#e81cff] sm:text-black"
+                } flex flex-col items-center justify-center border-white py-1 focus:text-[#e81cff] sm:w-full sm:flex-row sm:border sm:p-1.5 sm:hover:bg-[#e81cff] sm:hover:text-white sm:focus:border-[#e81cff] sm:focus:bg-[#e81cff] sm:focus:text-black sm:group-hover:justify-start sm:group-hover:px-4 lg:justify-start lg:px-4`
               }
             >
               <span className="inline-block w-8 h-8 sm:h-5 sm:w-5 justify-center items-center shrink-0 sm:group-hover:mr-4 lg:mr-4">

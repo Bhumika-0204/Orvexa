@@ -1,6 +1,6 @@
-# Orvexa Complete Setup Guide
+# ORVΞXA Complete Setup Guide
 
-Since Orvexa consists of two parts (Frontend and Backend), both need some specific configuration before they work perfectly together. The backend handles the database and user data, so it needs "secrets" which we store in a `.env` file.
+Since ORVΞXA consists of two parts (Frontend and Backend), both need some specific configuration before they work perfectly together. The backend handles the database and user data, so it needs "secrets" which we store in a `.env` file.
 
 Follow these instructions exactly to get everything up and running!
 
@@ -85,7 +85,7 @@ With your backend running and ready to take requests, we need to spin up the web
    npm run dev
    ```
 5. Vite will give you a local URL, typically `http://localhost:5173`.
-6. Ctrl+Click the link or paste it into your browser. You will now see your Orvexa application working!
+6. Ctrl+Click the link or paste it into your browser. You will now see your ORVΞXA application working!
 
 ---
 

@@ -7,7 +7,7 @@ function MyChannelEmptyVideo() {
     <div className="flex justify-center p-4">
       <div className="w-full max-w-sm text-center">
         <p className="mb-3 w-full">
-          <span className="inline-flex rounded-full bg-[#E4D3FF] p-2 text-[#AE7AFF]">
+          <span className="inline-flex rounded-full bg-[#E4D3FF] p-2 text-[#e81cff]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -29,7 +29,7 @@ function MyChannelEmptyVideo() {
         <p>Your Channel has no Videos yet. Go to the admin panel to upload the videos.</p>
         <button
           onClick={() => navigate("/admin/dashboard")}
-          className="mt-4 inline-flex items-center gap-x-2 bg-[#ae7aff] hover:bg-[#ae7aff]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
+          className="mt-4 inline-flex items-center gap-x-2 bg-[#e81cff] hover:bg-[#e81cff]/95 border border-transparent hover:border-dotted hover:border-white px-3 py-2 font-semibold text-black"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

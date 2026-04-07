@@ -15,7 +15,7 @@ function MyChannelTweets() {
           placeholder="Write a tweet"
         ></textarea>
         <div className="flex items-center justify-end gap-x-3 px-3">
-          <button className="inline-block h-5 w-5 hover:text-[#ae7aff]">
+          <button className="inline-block h-5 w-5 hover:text-[#e81cff]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -31,7 +31,7 @@ function MyChannelTweets() {
               ></path>
             </svg>
           </button>
-          <button className="inline-block h-5 w-5 hover:text-[#ae7aff]">
+          <button className="inline-block h-5 w-5 hover:text-[#e81cff]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -47,7 +47,7 @@ function MyChannelTweets() {
               ></path>
             </svg>
           </button>
-          <button className="bg-[#ae7aff] px-3 py-2 font-semibold text-black">Send</button>
+          <button className="bg-[#e81cff] px-3 py-2 font-semibold text-black">Send</button>
         </div>
       </div>
       <div className="py-4">
@@ -81,7 +81,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -102,7 +102,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -144,7 +144,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -165,7 +165,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -207,7 +207,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -228,7 +228,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -270,7 +270,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -291,7 +291,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -333,7 +333,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -354,7 +354,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -396,7 +396,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -417,7 +417,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -459,7 +459,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -480,7 +480,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -522,7 +522,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -543,7 +543,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -585,7 +585,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -606,7 +606,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"
@@ -648,7 +648,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-[#ae7aff] group-focus:text-inherit"
+                  className="h-5 w-5 text-[#e81cff] group-focus:text-inherit"
                 >
                   <path
                     strokeLinecap="round"
@@ -669,7 +669,7 @@ function MyChannelTweets() {
                   strokeWidth="1.5"
                   stroke="currentColor"
                   aria-hidden="true"
-                  className="h-5 w-5 text-inherit group-focus:text-[#ae7aff]"
+                  className="h-5 w-5 text-inherit group-focus:text-[#e81cff]"
                 >
                   <path
                     strokeLinecap="round"

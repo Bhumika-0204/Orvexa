@@ -1,10 +1,10 @@
-# Orvexa Application
+# ORVΞXA Application
 
-Orvexa is a unique web application that blends the best features of YouTube and Twitter. Users can search and view videos like YouTube, while also tweeting, interacting, and engaging with others as they would on Twitter. This repository contains both the frontend and backend for the Orvexa platform.
+ORVΞXA is a unique web application that blends the best features of YouTube and Twitter. Users can search and view videos like YouTube, while also tweeting, interacting, and engaging with others as they would on Twitter. This repository contains both the frontend and backend for the ORVΞXA platform.
 
-## Orvexa Frontend
+## ORVΞXA Frontend
 
-This project serves as the frontend for the Orvexa platform, providing a sleek, interactive user interface built using React.
+This project serves as the frontend for the ORVΞXA platform, providing a sleek, interactive user interface built using React.
 
 ### 🚀 Features
 - **Video Browsing:** Search for videos, view video details, and explore trending content, similar to YouTube.
@@ -31,9 +31,9 @@ This project serves as the frontend for the Orvexa platform, providing a sleek, 
 
 ---
 
-## Orvexa Backend
+## ORVΞXA Backend
 
-Orvexa Backend is the server-side component of the Orvexa application, designed to handle data processing, storage, and management for the Orvexa platform. It provides a robust API that supports functionalities such as user authentication, video uploading, and tweet management.
+ORVΞXA Backend is the server-side component of the ORVΞXA application, designed to handle data processing, storage, and management for the ORVΞXA platform. It provides a robust API that supports functionalities such as user authentication, video uploading, and tweet management.
 
 ### 🛠️ Tech Stack
 - **Node.js:** A JavaScript runtime built on Chrome's V8 engine layout for building fast and scalable server-side applications.

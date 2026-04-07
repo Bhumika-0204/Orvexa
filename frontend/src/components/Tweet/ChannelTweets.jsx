@@ -61,7 +61,7 @@ function ChannelTweets({ owner = false }) {
             <div className="w-20 h-10 bg-slate-100/20 rounded animate-pulse"></div>
           </div>
         </div>
-        <hr className=" border-[#ae7aff]/0 animate-pulse my-2" />
+        <hr className=" border-[#e81cff]/0 animate-pulse my-2" />
         <div className=" px-1">
           <div className="flex justify-between ">
             {/* comment content */}
@@ -271,7 +271,7 @@ function ChannelTweets({ owner = false }) {
 
           <div className="flex items-center justify-end gap-x-3 px-3">
             {/* Emoji button */}
-            <button type="button" className="inline-block h-5 w-5 hover:text-[#ae7aff]">
+            <button type="button" className="inline-block h-5 w-5 hover:text-[#e81cff]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -296,7 +296,7 @@ function ChannelTweets({ owner = false }) {
               cancel
             </button>
             {/* send button */}
-            <button type="submit" className="bg-[#ae7aff] px-3 py-2 font-semibold text-black">
+            <button type="submit" className="bg-[#e81cff] px-3 py-2 font-semibold text-black">
               Send
             </button>
           </div>

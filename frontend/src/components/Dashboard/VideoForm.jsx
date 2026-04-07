@@ -19,6 +19,7 @@ function VideoForm({ video = false }, ref) {
     register,
     handleSubmit,
     getValues,
+    reset,
     formState: { errors },
   } = useForm({
     defaultValues: {
@@ -86,6 +87,10 @@ function VideoForm({ video = false }, ref) {
               ref={successDialog}
               video={video || getValues()}
               updating={video ? true : false}
+              onUploadAnother={() => {
+                reset();
+                dialog.current?.showModal();
+              }}
             />
             <div className=" bg-black/85 p-2 sm:p-2 text-white">
               <form onSubmit={handleSubmit(handleVideo)} className="h-fit border bg-[#121212]">
@@ -96,7 +101,7 @@ function VideoForm({ video = false }, ref) {
                     type="button"
                     autoFocus
                     onClick={() => dialog.current.close()}
-                    className="group/btn mr-1 flex w-auto items-center gap-x-2 bg-[#ae7aff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
+                    className="group/btn mr-1 flex w-auto items-center gap-x-2 bg-[#e81cff] px-3 py-2 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
                   >
                     Close
                   </button>
@@ -108,7 +113,7 @@ function VideoForm({ video = false }, ref) {
                   {!video && (
                     <>
                       <div className="w-full border-2 border-dashed px-2 py-5 text-center">
-                        <span className="mb-2 md:mb-4 inline-block md:w-12 w-12 rounded-full bg-[#E4D3FF] p-3 text-[#AE7AFF]">
+                        <span className="mb-2 md:mb-4 inline-block md:w-12 w-12 rounded-full bg-[#E4D3FF] p-3 text-[#e81cff]">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -134,18 +139,19 @@ function VideoForm({ video = false }, ref) {
                         </p>
                         <label
                           htmlFor="upload-video"
-                          className="group/btn mt-3 md:mt-3 inline-flex w-auto cursor-pointer items-center gap-x-2 bg-[#ae7aff] px-3 py-2 text-xs md:text-sm md:px-3 md:py-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
+                          className="group/btn mt-3 md:mt-3 inline-flex w-auto cursor-pointer items-center gap-x-2 bg-[#e81cff] px-3 py-2 text-xs md:text-sm md:px-3 md:py-3 text-center font-bold text-black shadow-[5px_5px_0px_0px_#4f4e4e] transition-all duration-150 ease-in-out active:translate-x-[5px] active:translate-y-[5px] active:shadow-[0px_0px_0px_0px_#4f4e4e]"
                         >
                           <input
                             type="file"
                             {...register("videoFile", {
                               required: true,
                               validate: (file) => {
-                                const allowedExtensions = ["video/mp4"];
-                                const fileType = file[0].type;
-                                return allowedExtensions.includes(fileType)
+                                if (!file || !file[0]) return true;
+                                const allowedExtensions = ["video/mp4", "video/x-m4v", "video/webm", "video/quicktime"];
+                                const fileType = file[0]?.type;
+                                return allowedExtensions.includes(fileType) || fileType.startsWith("video/")
                                   ? true
-                                  : "Invalid file type! Only .mp4 files are accepted";
+                                  : "Invalid file type! Please select a valid video file format.";
                               },
                             })}
                             id="upload-video"
@@ -185,7 +191,7 @@ function VideoForm({ video = false }, ref) {
                             : "Invalid file type! Only .png .jpg and .jpeg files are accepted";
                         },
                       })}
-                      className="w-full border p-1 file:mr-4 file:border-none file:bg-[#ae7aff] file:px-3 file:py-1.5"
+                      className="w-full border p-1 file:mr-4 file:border-none file:bg-[#e81cff] file:px-3 file:py-1.5"
                     />
                   </div>
                   {errors.thumbnail?.type === "required" && (
@@ -207,7 +213,7 @@ function VideoForm({ video = false }, ref) {
                       id="title"
                       {...register("title", { required: true })}
                       type="text"
-                      className="w-full border focus:border-[#ae7aff] bg-transparent px-2 py-1 outline-none"
+                      className="w-full border focus:border-[#e81cff] bg-transparent px-2 py-1 outline-none"
                     />
                   </div>
                   {errors.title?.type === "required" && (
@@ -222,7 +228,7 @@ function VideoForm({ video = false }, ref) {
                     <textarea
                       id="desc"
                       {...register("description")}
-                      className="h-24 md:h-32 w-full resize-none border focus:border-[#ae7aff] bg-transparent px-2 py-1 outline-none"
+                      className="h-24 md:h-32 w-full resize-none border focus:border-[#e81cff] bg-transparent px-2 py-1 outline-none"
                     ></textarea>
                   </div>
 
@@ -240,7 +246,7 @@ function VideoForm({ video = false }, ref) {
                     <button
                       type="submit"
                       disabled={errors.title || errors.videoFile || (!video && errors.thumbnail)}
-                      className="bg-[#ae7aff] px-4 py-2 md:px-4 md:py-3 text-black hover:font-semibold hover:border disabled:bg-[#E4D3FF] disabled:cursor-not-allowed"
+                      className="bg-[#e81cff] px-4 py-2 md:px-4 md:py-3 text-black hover:font-semibold hover:border disabled:bg-[#E4D3FF] disabled:cursor-not-allowed"
                     >
                       {video ? "Update" : "Publish"}
                     </button>

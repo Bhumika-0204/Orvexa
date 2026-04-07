@@ -51,8 +51,8 @@ function Channel({ owner = false }) {
                 end
                 className={({ isActive }) =>
                   `${isActive
-                    ? " bg-white/90 border-[#ae7aff] text-black rounded-t"
-                    : "text-[#ae7aff] "
+                    ? " bg-white/90 border-[#e81cff] text-black rounded-t"
+                    : "text-[#e81cff] "
                   } w-full text-center flex justify-center border-b-2 px-3 py-1.5`
                 }
               >

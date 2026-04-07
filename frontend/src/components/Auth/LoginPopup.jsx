@@ -130,7 +130,7 @@ function LoginPopup({ route, message = "Login to Continue..." }, ref) {
                   <Button
                     type="submit"
                     disabled={loading}
-                    className="grow bg-[#ae7aff] hover:bg-[#ae7aff]/90 hover:border-dotted border border-white text-black"
+                    className="grow bg-[#e81cff] hover:bg-[#e81cff]/90 hover:border-dotted border border-white text-black"
                   >
                     {loading ? <span>{icons.loading}</span> : "Sign in"}
                   </Button>

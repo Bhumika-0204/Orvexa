@@ -79,7 +79,7 @@ function EditVideo() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <button className="border px-4 py-3">Cancel</button>
-            <button className="bg-[#ae7aff] px-4 py-3 text-black disabled:bg-[#E4D3FF]">
+            <button className="bg-[#e81cff] px-4 py-3 text-black disabled:bg-[#E4D3FF]">
               Update
             </button>
           </div>

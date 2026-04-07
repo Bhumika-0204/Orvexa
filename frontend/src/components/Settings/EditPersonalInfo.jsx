@@ -114,7 +114,7 @@ function EditPersonalInfo({ userData }) {
             <button
               type="submit"
               disabled={data == defaultValues}
-              className="inline-block bg-[#ae7aff] px-3 py-1.5 text-black disabled:cursor-not-allowed"
+              className="inline-block bg-[#e81cff] px-3 py-1.5 text-black disabled:cursor-not-allowed"
             >
               Save changes
             </button>
