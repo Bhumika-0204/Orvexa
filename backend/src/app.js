@@ -5,9 +5,9 @@ import cors from "cors";
 const app=express();
 
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: [process.env.CORS_ORIGIN, 'https://orvexa-iota.vercel.app', 'http://localhost:5173', 'http://localhost:5174'],
     credentials: true,
-    methods: ['GET', 'POST','PATCH', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }))
 
