@@ -1,66 +1,114 @@
-# ORVΞXA Application
+<div align="center">
+  <img src="./frontend/src/assets/react.svg" alt="ORVΞXA Logo" width="100"/>
+  <h1>ORVΞXA</h1>
+  <p><strong>A Next-Generation Hybrid Video & Social Platform</strong></p>
+  
+  [![Frontend](https://img.shields.io/badge/Frontend-React.js-blue?style=for-the-badge&logo=react)](#frontend)
+  [![Backend](https://img.shields.io/badge/Backend-Node.js-green?style=for-the-badge&logo=node.js)](#backend)
+  [![Database](https://img.shields.io/badge/Database-MongoDB-47A248?style=for-the-badge&logo=mongodb)](#database)
 
-ORVΞXA is a unique web application that blends the best features of YouTube and Twitter. Users can search and view videos like YouTube, while also tweeting, interacting, and engaging with others as they would on Twitter. This repository contains both the frontend and backend for the ORVΞXA platform.
+  <p>
+    <a href="https://orvexa-iota.vercel.app"><b>Live Demo</b></a> •
+    <a href="#-architecture--tech-stack"><b>Tech Stack</b></a> •
+    <a href="#-getting-started"><b>Quick Start</b></a> •
+    <a href="#-features"><b>Features</b></a>
+  </p>
+</div>
 
-## ORVΞXA Frontend
+<br />
 
-This project serves as the frontend for the ORVΞXA platform, providing a sleek, interactive user interface built using React.
+## 🌟 About ORVΞXA
 
-### 🚀 Features
-- **Video Browsing:** Search for videos, view video details, and explore trending content, similar to YouTube.
-- **Tweeting:** Create, post, and interact with tweets while watching videos.
-- **Video Uploading:** Users can upload their own videos, allowing content creation and sharing.
-- **User Profiles:** View and manage user profiles with both video and tweet interactions in one place.
-- **Responsive Design:** Fully responsive interface for seamless viewing on desktops, tablets, and mobile devices.
-- **JWT Authentication:** Secure login and user authentication with JSON Web Tokens (JWT).
-
-### 🛠️ Tech Stack
-- **React:** Core library for building the frontend UI.
-- **Redux Toolkit:** State management for handling complex user interactions and data flow.
-- **React Router:** For dynamic, single-page navigation within the app.
-- **Tailwind CSS:** For responsive and modern styling.
-- **Axios:** To handle API requests and interactions with the backend.
-- **Cloudinary:** For uploading and managing media (images, videos).
-- **JavaScript (ES6+):** Primary language for functionality.
-
-### 📚 Getting Started (Frontend)
-1. Navigate to the frontend directory: `cd frontend`
-2. Install dependencies: `npm install`
-3. Run the development server: `npm run dev` (or `npm start`)
-4. Open your browser and navigate to: `http://localhost:5173`
+**ORVΞXA** is a disruptive full-stack web application that seamlessly merges the long-form video capabilities of YouTube with the high-paced social engagement of Twitter. Whether you want to discover trending videos, publish your own content, or engage in real-time tweet threads while simultaneously streaming, ORVΞXA provides a unified, highly optimized user experience.
 
 ---
 
-## ORVΞXA Backend
+## 🚀 Features
 
-ORVΞXA Backend is the server-side component of the ORVΞXA application, designed to handle data processing, storage, and management for the ORVΞXA platform. It provides a robust API that supports functionalities such as user authentication, video uploading, and tweet management.
-
-### 🛠️ Tech Stack
-- **Node.js:** A JavaScript runtime built on Chrome's V8 engine layout for building fast and scalable server-side applications.
-- **Express.js:** A minimal and flexible Node.js web application framework.
-- **MongoDB:** A NoSQL database used to store and manage application data in a flexible, JSON-like format.
-- **Mongoose:** An ODM library for MongoDB and Node.js.
-- **CORS:** A middleware to enable Cross-Origin Resource Sharing.
-- **JWT (JSON Web Tokens):** For secure user authentication and authorization.
-- **dotenv:** A zero-dependency module that loads environment variables.
-
-### 🚀 Features
-- **User Authentication:** Secure user registration and login using JWT.
-- **Video Management:** API endpoints for uploading, retrieving, and managing videos.
-- **Tweet Management:** Create, retrieve, update, and delete tweets.
-- **CORS Support:** Allow requests from different origins for seamless integration with the frontend.
-- **Environment Configuration:** Use environment variables for sensitive configurations and API keys.
-
-### 📚 Getting Started (Backend)
-1. Navigate to the backend directory: `cd backend`
-2. Install dependencies: `npm install`
-3. Running the App: `npm run dev` (or `npm start`)
-4. Open your Postman or any API testing tool and test the endpoints at `http://localhost:8000`
+- **Hybrid Social Engine:** Experience video viewing alongside real-time tweeting without ever breaking context.
+- **Robust Video Processing:** Built-in support for performant video uploads, storage via Cloudinary, and optimized retrieval.
+- **Granular Interactions:** Like, comment, tweet, and subscribe to content creators instantly.
+- **State-of-the-Art Authentication:** Secure, encrypted login flows utilizing JSON Web Tokens (JWT) and BCrypt.
+- **Fully Responsive UI:** A pixel-perfect frontend designed with TailwindCSS, dynamically adapting to mobile, tablet, and desktop environments.
+- **Enterprise-ready Backend:** Structured, scalable MVC architecture built on Express that dynamically scales.
 
 ---
 
-## Environment Variables
-Make sure to configure your environment variables in `.env` files in both the frontend and backend directories. You'll need settings like the backend API URL for the frontend, and MongoDB connection string, Cloudinary credentials, and JWT secret for the backend.
+## 🛠️ Architecture & Tech Stack
 
+ORVΞXA follows a monolithic-repository architecture separated into distinct **Frontend** and **Backend** workspaces.
 
+### Frontend
+- **Framework & State:** React, Redux Toolkit
+- **Routing & Networking:** React Router DOM, Axios
+- **Styling:** Tailwind CSS
 
+### Backend
+- **Server:** Node.js, Express.js
+- **Database & ODM:** MongoDB, Mongoose
+- **Security & Media:** JWT, Bcrypt, Cloudinary, Multer
+
+---
+
+## 🚦 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/en/) (v16+) and [npm](https://www.npmjs.com/) installed on your local machine.
+
+### Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Bhumika-0204/Orvexa.git
+   cd Orvexa
+   ```
+
+2. **Backend Setup**
+   ```bash
+   cd backend
+   npm install
+   ```
+   *Create a `.env` file in the backend directory and populate your API keys (MongoDB, Cloudinary, JWT).*
+
+   Start the server:
+   ```bash
+   npm run dev
+   ```
+
+3. **Frontend Setup**
+   Open a new terminal window:
+   ```bash
+   cd frontend
+   npm install
+   ```
+   *Create a `.env` file in the frontend directory and define your backend URI (e.g. `VITE_BACKEND_URL=http://localhost:8000/api/v1`).*
+
+   Start the client application:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🌐 Deployments
+
+ORVΞXA is built to be cloud-agnostic and is officially structured for deployment on Vercel and Render.
+- **Frontend Live URL:** [https://orvexa-iota.vercel.app](https://orvexa-iota.vercel.app)
+- **Backend API:** Hosted securely on Render.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps to contribute:
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+<div align="center">
+  <i>Developed with ❤️ for the modern web creator.</i>
+</div>
