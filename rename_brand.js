@@ -12,5 +12,6 @@ for (const file of files) {
     let c = fs.readFileSync(fp, "utf8");
     c = c.replace(/Orvexa/g, "ORVΞXA");
     fs.writeFileSync(fp, c, "utf8");
+    //synchronous req 
   }
 }
