@@ -63,6 +63,4 @@ ORVΞXA is cloud-agnostic, currently operating under a highly optimized edge-com
 
 ---
 
-<div align="center">
-  <i>Engineered with ❤️ to redefine the modern web experience.</i>
-</div>
+
