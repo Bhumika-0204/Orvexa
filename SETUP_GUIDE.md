@@ -89,7 +89,7 @@ With your backend running and ready to take requests, we need to spin up the web
 
 ---
 
-### In Summary, every time you want to work on or run the project:
+### In Summary, every time you want to work on or run the project:-
 - **Terminal 1:** `cd orvexa/backend` > `npm run dev`
 - **Terminal 2:** `cd orvexa/frontend` > `npm run dev`
 
